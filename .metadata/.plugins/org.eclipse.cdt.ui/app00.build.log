@@ -1,0 +1,18 @@
+19:21:12 **** Build of configuration Nios II for project app00 ****
+make all 
+Info: Building ../app00_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../app00_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../app00_bsp//HAL/inc -I../app00_bsp/ -I../app00_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+Info: Linking app00.elf
+nios2-elf-g++  -T'../app00_bsp//linker.x' -msys-crt0='../app00_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../app00_bsp/   -Wl,-Map=app00.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o app00.elf obj/default/main.o -lm -msys-lib=m
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0x14380 of app00.elf section `.rwdata' is not within region `onchip_memory2_0'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0x14ca0 of app00.elf section `.bss' is not within region `onchip_memory2_0'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0x14380 of app00.elf section `.rwdata' is not within region `onchip_memory2_0'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0x14ca0 of app00.elf section `.bss' is not within region `onchip_memory2_0'
+collect2.exe: error: ld returned 1 exit status
+make: *** [app00.elf] Error 1
+
+19:21:12 Build Finished (took 847ms)
+

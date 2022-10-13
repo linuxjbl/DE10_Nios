@@ -1,0 +1,36 @@
+15:18:54 **** Build of configuration Nios II for project app01 ****
+make all 
+Info: Building ../app01_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../app01_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../app01_bsp//HAL/inc -I../app01_bsp/ -I../app01_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking app01.elf
+nios2-elf-g++  -T'../app01_bsp//linker.x' -msys-crt0='../app01_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../app01_bsp/  -msmallc  -Wl,-Map=app01.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o app01.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert app01.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_0 --stdin_dev uart_0 --stdout_dev uart_0 --sopc_system_name nios2e --quartus_project_dir "C:/MyDir/DE10_Nios" --jdi ../..//output_files/top_de10_nios.jdi --sopcinfo C:/MyDir/DE10_Nios/software/app01_bsp/../../nios2e.sopcinfo
+Info: (app01.elf) 1168 Bytes program size (code + initialized data).
+Info:             14 KBytes free for stack + heap.
+Info: Creating app01.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source app01.elf >app01.objdump
+[app01 build complete]
+
+15:18:57 Build Finished (took 2s.781ms)
+
+15:19:07 **** Build of configuration Nios II for project app01 ****
+make all 
+Info: Building ../app01_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../app01_bsp/
+[BSP build complete]
+[app01 build complete]
+15:19:31 **** Build of configuration Nios II for project app01 ****
+make all 
+Info: Building ../app01_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../app01_bsp/
+[BSP build complete]
+[app01 build complete]
+15:19:33 **** Incremental Build of configuration Nios II for project app01 ****
+make all 
+Info: Building ../app01_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../app01_bsp/
+[BSP build complete]
+[app01 build complete]
